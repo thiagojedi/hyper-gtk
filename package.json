@@ -1,0 +1,18 @@
+{
+  "name": "hyper-gtk",
+  "version": "0.1.0",
+  "description": "Component library for Gjs",
+  "main": "out/index.js",
+  "scripts": {
+    "build": "tsc -b .",
+    "prestart": "npm run build",
+    "start": "gjs ./out/test.js"
+  },
+  "devDependencies": {
+    "ts-for-gjs": "github:sammydre/ts-for-gjs",
+    "typescript": "^3.6.2"
+  },
+  "author": "Thiago 'Jedi' Abreu <thiagoa7@gmail.com> (https://thiagoabreu.github.io/)",
+  "license": "Beerware",
+  "dependencies": {}
+}

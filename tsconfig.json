@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "none",
+    "moduleResolution": "node",
+    "jsx": "react",
+    "jsxFactory": "HyperGtk.createWidget",
+    "removeComments": true,
+    "outDir": "out"
+  },
+  "include": [
+    "src"
+  ]
+}
