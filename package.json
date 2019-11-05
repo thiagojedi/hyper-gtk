@@ -1,12 +1,11 @@
 {
   "name": "hyper-gtk",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Component library for Gjs",
-  "main": "out/index.js",
   "scripts": {
     "build": "tsc -b .",
     "prestart": "npm run build",
-    "start": "gjs ./out/test.js"
+    "start": "gjs ./out/example.js"
   },
   "devDependencies": {
     "ts-for-gjs": "github:sammydre/ts-for-gjs",
