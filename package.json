@@ -3,17 +3,15 @@
   "version": "0.2.0",
   "description": "Component library for Gjs",
   "scripts": {
-    "build": "tsc -p .",
-    "prestart": "npm run build",
-    "start": "cgjs ./out/example.js"
+    "start": "cgjs ./src/example.js"
   },
   "devDependencies": {
-    "@types/node": "^12.12.7",
-    "typescript": "^3.7.2"
+    "@types/node": "^12.12.7"
   },
   "author": "Thiago 'Jedi' Abreu <thiagoa7@gmail.com> (https://thiagoabreu.github.io/)",
   "license": "Beerware",
   "dependencies": {
-    "cgjs": "^0.1.32"
+    "cgjs": "^0.1.32",
+    "htm": "^2.2.1"
   }
 }
