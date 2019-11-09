@@ -5,13 +5,15 @@
   "scripts": {
     "build": "tsc -p .",
     "prestart": "npm run build",
-    "start": "gjs ./out/example.js"
+    "start": "cgjs ./out/example.js"
   },
   "devDependencies": {
-    "ts-for-gjs": "github:sammydre/ts-for-gjs",
-    "typescript": "^3.6.2"
+    "@types/node": "^12.12.7",
+    "typescript": "^3.7.2"
   },
   "author": "Thiago 'Jedi' Abreu <thiagoa7@gmail.com> (https://thiagoabreu.github.io/)",
   "license": "Beerware",
-  "dependencies": {}
+  "dependencies": {
+    "cgjs": "^0.1.32"
+  }
 }

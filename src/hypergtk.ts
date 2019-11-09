@@ -1,11 +1,13 @@
-var Gtk = imports.gi.Gtk;
+//@ts-ignore
+import { Gtk } from "gir";
+//@ts-check
 
-function createWidget(widgetConstructor, attributes, ...args) {
+export const createWidget = (widgetConstructor, attributes, ...args) => {
   const children = args.length ? [].concat(args) : null;
   return { widgetConstructor, attributes, children };
-}
+};
 
-function render({ widgetConstructor, attributes, children }) {
+export const render = ({ widgetConstructor, attributes, children }) => {
   if (!isConstructor(widgetConstructor))
     return render(widgetConstructor(attributes));
 
@@ -50,7 +52,7 @@ function render({ widgetConstructor, attributes, children }) {
   if (typeof widget.present === "function") widget.present();
 
   return widget;
-}
+};
 
 /* UTILS */
 

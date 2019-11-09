@@ -1,8 +1,8 @@
-imports.searchPath.push(".");
+import * as HyperGtk from "./hypergtk";
 
-(imports.gi as any).versions.Gtk = "3.0";
-var Gtk = imports.gi.Gtk;
-const HyperGtk = (imports as any).out.hypergtk;
+//@ts-ignore
+import { Gtk } from "gir";
+//@ts-check
 
 Gtk.init(null);
 

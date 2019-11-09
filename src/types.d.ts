@@ -1,5 +1,1 @@
-import "ts-for-gjs/out/print";
-
-declare global {
-  const imports: any;
-}
+declare function print(...args: any[]): void
